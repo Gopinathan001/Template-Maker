@@ -3,7 +3,7 @@ const clear = document.getElementById("clear")
 clear.addEventListener('click', function handleClick(event) {
     event.preventDefault
     const inputs = document.querySelectorAll('#yourname, #phno, #skill, #mail, #linkedin, #degree, #major, #position, #Companyname')
-    const innerH = document.querySelectorAll('#display')
+    const innerH = document.querySelectorAll('#display, #display1')
     innerH.forEach(innerHT => {
         innerHT.innerHTML = ""
     })
