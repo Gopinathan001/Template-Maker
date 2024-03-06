@@ -15,7 +15,6 @@
   margin-top: 5%;
   padding: 4%;
   text-align: left;
-  height: 60rem;
 }
 label {
   font-weight: bold;
@@ -51,6 +50,11 @@ label {
 
 #form-tagline {
   text-align: justify;
+}
+
+/* validation Colour */
+.error {
+  color: rgba(255, 0, 0, 0.452);
 }
 
 @media screen and (max-width: 600px) {
