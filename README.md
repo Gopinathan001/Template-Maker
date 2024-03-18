@@ -1,5 +1,5 @@
 **Technologies Used:**
-*HTML5
-*CSS3
-*JavaScript (Vanilla JS)
-*Bootstrap (CSS framework)
+ Markup : * HTML5
+ Markup : * CSS3
+ Markup : * JavaScript (Vanilla JS)
+ Markup : * Bootstrap (CSS framework)
