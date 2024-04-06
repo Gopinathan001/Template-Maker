@@ -13,9 +13,10 @@
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   margin-top: 5%;
-  padding: 4%;
+  padding: 2%;
   text-align: left;
 }
+
 label {
   font-weight: bold;
 }
@@ -26,7 +27,7 @@ label {
   border-bottom-right-radius: 0.5rem;
   margin-top: 5%;
   padding: 3%;
-  height: 60rem;
+  height: 55rem;
   overflow: scroll;
   -ms-overflow-style: none;
 }
@@ -52,10 +53,18 @@ label {
   text-align: justify;
 }
 
-/* validation Colour */
-.error {
-  color: rgba(255, 0, 0, 0.452);
+input[type="radio"] {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 36.5rem;
 }
+
+/* validation Colour
+.error {
+  font-size: 15px;
+  padding: 10px 0 0 55px;
+  color: rgba(255, 0, 0, 0.589);
+} */
 
 @media screen and (max-width: 600px) {
   #form-tagline {
