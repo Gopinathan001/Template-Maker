@@ -1,333 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./static/css/template.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template Maker</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./static/css/template.css" />
+</head>
+<body>
     <div class="container">
-      <!-- heading -->
-      <div class="row">
-        <div id="form-header" class="col-12">
-          <h1 id="title">Template Maker</h1>
+        <!-- Heading -->
+        <div class="row">
+            <div id="form-header" class="col-12">
+                <h1 id="title">Template Maker</h1>
+            </div>
         </div>
-      </div>
-      <!-- form -->
-      <div class="row" id="size">
-        <div id="form-content" class="col-md-5">
-          <form action="">
-            <div class="row form-group">
-              <div class="col-sm-5">
-                <label for="yourname" class="control-label">Name:</label>
-              </div>
-
-              <div class="input-group col-sm-12">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-user"></i
-                  ></span>
+        <!-- Heading End -->
+        <!-- Starting -->
+        <div class="row" id="size">
+            <div id="form-content" class="col-md-5">
+                <!-- Form -->
+                <form class="container" id="needs-validation" novalidate>
+                    <!-- Name input -->
+                    <div class="row form-group rounded-lg">
+                        <div class="col-sm-5">
+                            <label for="yourname" class="control-label">Name:</label>
+                        </div>
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input type="text" id="yourname" placeholder="Eg : Ram Kumar" class="form-control" required />
+                            <div class="invalid-feedback">Name is required</div>
+                        </div>
+                    </div>
+                    <!-- Name input End -->
+                    <!-- Phone number input -->
+                    <div class="row form-group">
+                        <div class="col-sm-5">
+                            <label for="phno" class="control-label">Phone-No:</label>
+                        </div>
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                            </div>
+                            <input type="tel" id="phno" placeholder="Eg : 78XXX XXX96" pattern="[0-9]{10}" class="form-control" required />
+                            <div class="invalid-feedback">Phone Number is required</div>
+                        </div>
+                    </div>
+                    <!-- Phone number input End -->
+                    <!-- Skills input -->
+                    <div class="row form-group">
+                        <div class="col-sm-5">
+                            <label for="skill" class="control-label">Skills:</label>
+                        </div>
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-cogs"></i></span>
+                            </div>
+                            <input type="text" id="skill" placeholder="Eg : Python, HTML, CSS,...ets" class="form-control" required />
+                            <div class="invalid-feedback">Skills is required</div>
+                        </div>
+                    </div>
+                    <!-- Skills input End -->
+                    <!-- E-Mail-id input  -->
+                    <div class="row form-group">
+                        <div class="col-sm-5">
+                            <label for="mail" class="control-label">E-mail-ID:</label>
+                        </div>
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                            </div>
+                            <input type="email" id="mail" placeholder="Eg : ramkumar001@gmail.com" class="form-control" required />
+                            <div class="invalid-feedback">Please provide a valid Email.</div>
+                        </div>
+                    </div>
+                    <!-- E-Mail-id input End -->
+                    <!-- Linkedin input  -->
+                    <div class="row form-group">
+                        <div class="col-sm-5">
+                            <label for="linkedin" class="control-label">LinkedIn:</label>
+                        </div>
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-linkedin"></i></span>
+                            </div>
+                            <input type="text" id="linkedin" placeholder="Eg : https://www.linkedin.com/in/Ramkumar-python-developer/" class="form-control" required />
+                            <div class="invalid-feedback">Name is required</div>
+                        </div>
+                    </div>
+                    <!-- Linkedin input End -->
+                    <!-- Degree and Major input -->
+                    <div class="row">
+                        <!-- Degree -->
+                        <div class="col-md-6 col-sm-12 col-12">
+                            <div class="row form-group">
+                                <div class="col-sm-5">
+                                    <label for="degree" class="control-label">Degree:</label>
+                                </div>
+                                <div class="input-group col-sm-12">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-graduation-cap"></i></span>
+                                    </div>
+                                    <input type="text" id="degree" placeholder="Eg : MCA" class="form-control" required />
+                                    <div class="invalid-feedback">Name is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Degree End -->
+                        <!-- Major -->
+                        <div class="col-md-6 col-sm-12 col-12">
+                            <div class="row form-group">
+                                <div class="col-sm-5">
+                                    <label for="major" class="control-label">Major:</label>
+                                </div>
+                                <div class="input-group col-sm-12">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-file-text-o"></i></span>
+                                    </div>
+                                    <input type="text" id="major" placeholder="Eg : Computer Application" class="form-control" required />
+                                    <div class="invalid-feedback">Name is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Major End -->
+                    </div>
+                    <!-- Degree and Major input End -->
+                    <!-- job -->
+                    <div class="row form-group">
+                        <div class="col-sm-5">
+                            <label for="position" class="control-label">Job-Position:</label>
+                        </div>
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-users"></i></span>
+                            </div>
+                            <input type="text" id="position" placeholder="Eg : Web Developer" class="form-control" required />
+                            <div class="invalid-feedback">Name is required</div>
+                        </div>
+                    </div>
+                    <!-- job End -->
+                    <!-- company -->
+                    <div class="row form-group">
+                        <div class="col-sm-5">
+                            <label for="Companyname" class="control-label">Company-Name:</label>
+                        </div>
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-file-text-o"></i></span>
+                            </div>
+                            <input type="text" id="Companyname" placeholder="Eg : Techno Soft" class="form-control" required />
+                            <div class="invalid-feedback">Company Name is required</div>
+                        </div>
+                    </div>
+                    <!-- company End -->
+                    <!-- Button -->
+                    <div class="row form-group">
+                        <div class="col-sm-12 text-center submit-button">
+                            <input type="button" value="Clear" id="clear" class="btn btn-danger" aria-pressed="true" />
+                            <input type="submit" value="Submit" onclick="inputValue()" class="btn btn-success" aria-pressed="true" />
+                        </div>
+                    </div>
+                    <!-- <div class="row form-group">
+                        <div class="col-sm-12 text-center submit-button">
+                            <input type="submit" value="Copy" onclick="copyToClipboard()" class="btn btn-primary" aria-pressed="true" />
+                        </div>
+                    </div> -->
+                    <!-- Button End -->
+                </form>
+                <!-- Form End-->
+            </div>
+            <div id="form-tagline" class="col-md-7">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a href="#emailstemplates" role="tab" data-toggle="tab" class="nav-link active">Email</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#covertemplates" role="tab" data-toggle="tab" class="nav-link">Cover Letter</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="emailstemplates" role="tabpanel">
+                        <div id="display"></div>
+                        <div id="display1"></div>
+                        <div id="display2"></div>
+                        <div id="display3"></div>
+                        <div id="display4"></div>
+                        <div id="display5"></div>
+                        <div id="display6"></div>
+                      </div>
+                      <div class="tab-pane" id="covertemplates"  role="tabpanel">
+                        <div id="displayCover"></div>
+                        <div id="displayCover1"></div>
+                      </div>
                 </div>
-                <input
-                  type="text"
-                  id="yourname"
-                  placeholder="Eg : Ram Kumar"
-                  class="form-control"
-                />
-              </div>
-              <span id="user-name-error" class="error"></span>
             </div>
-
-            <div class="row form-group">
-              <div class="col-sm-5">
-                <label for="phno" class="control-label">Phone-No:</label>
-              </div>
-
-              <div class="input-group col-sm-12">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-phone"></i
-                  ></span>
-                </div>
-                <input
-                  type="tel"
-                  id="phno"
-                  placeholder="Eg : 78XXX XXX96"
-                  class="form-control"
-                />
-              </div>
-              <span id="phone-no-error" class="error"></span>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-sm-5">
-                <label for="skill" class="control-label">Skills:</label>
-              </div>
-
-              <div class="input-group col-sm-12">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-cogs"></i
-                  ></span>
-                </div>
-                <input
-                  type="text"
-                  id="skill"
-                  placeholder="Eg : Python, HTML, CSS,...ets"
-                  class="form-control"
-                />
-              </div>
-              <span id="sikll-error" class="error"></span>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-sm-5">
-                <label for="mail" class="control-label">E-mail-ID:</label>
-              </div>
-
-              <div class="input-group col-sm-12">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-envelope"></i
-                  ></span>
-                </div>
-                <input
-                  type="email"
-                  id="mail"
-                  placeholder="Eg : ramkumar001@gmail.com"
-                  class="form-control"
-                />
-              </div>
-              <span id="mail-no-error" class="error"></span>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-sm-5">
-                <label for="linkedin" class="control-label">LinkedIn:</label>
-              </div>
-
-              <div class="input-group col-sm-12">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-linkedin"></i
-                  ></span>
-                </div>
-                <input
-                  type="text"
-                  id="linkedin"
-                  placeholder="Eg : https://www.linkedin.com/in/Ramkumar-python-developer/"
-                  class="form-control"
-                />
-              </div>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-sm-5">
-                <label for="linkedin" class="control-label">Degree:</label>
-              </div>
-
-              <div class="input-group col-sm-12">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-graduation-cap"></i
-                  ></span>
-                </div>
-                <input
-                  type="text"
-                  id="degree"
-                  placeholder="Eg : MCA"
-                  class="form-control"
-                />
-              </div>
-              <span id="degree-error" class="error"></span>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-sm-5">
-                <label for="major" class="control-label">Major:</label>
-              </div>
-
-              <div class="input-group col-sm-12">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-file-text-o"></i
-                  ></span>
-                </div>
-                <input
-                  type="text"
-                  id="major"
-                  placeholder="Eg : Computer Application"
-                  class="form-control"
-                />
-              </div>
-              <span id="major-error" class="error"></span>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-sm-5">
-                <label for="position" class="control-label"
-                  >Job-Position:</label
-                >
-              </div>
-
-              <div class="input-group col-sm-12">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fas fa-users"></i
-                  ></span>
-                </div>
-                <input
-                  type="text"
-                  id="position"
-                  placeholder="Eg : Web Developer"
-                  class="form-control"
-                />
-              </div>
-              <span id="position-error" class="error"></span>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-sm-5">
-                <label for="position" class="control-label"
-                  >Company-Name:</label
-                >
-              </div>
-
-              <div class="input-group col-sm-12">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-building-o"></i
-                  ></span>
-                </div>
-                <input
-                  type="text"
-                  id="Companyname"
-                  placeholder="Eg : Techno Soft"
-                  class="form-control"
-                />
-              </div>
-              <span id="company-error" class="error"></span>
-            </div>
-
-            <div class="form-group row">
-              <div class="col-sm-12 text-center submit-button">
-                <input
-                  type="button"
-                  value="Clear"
-                  id="clear"
-                  class="btn btn-danger"
-                  aria-pressed="true"
-                />
-                <input
-                  type="button"
-                  value="Submit"
-                  onclick="inputValue()"
-                  class="btn btn-success"
-                  aria-pressed="true"
-                />
-              </div>
-            </div>
-          </form>
         </div>
-
-        <div id="form-tagline" class="col-md-7">
-          <div class="form-tagline">
-            <div id="display"></div>
-            <div id="display1"></div>
-            <div id="display2"></div>
-            <div id="display3"></div>
-            <div id="display4"></div>
-            <div id="display5"></div>
-            <div id="display6"></div>
-          </div>
-        </div>
-      </div>
+        <!-- Ending -->
     </div>
-
-    <!-- <form action="">
-      <h2>Template Maker</h2>
-      <div class="inputs">
-        <label for="yourname">Enter Your Name</label>
-        <input type="text" id="yourname" placeholder="Eg : Ram Kumar" />
-      </div>
-
-      <div class="inputs">
-        <label for="phno">Enter Your Phone No</label>
-        <input type="number" id="phno" placeholder="Eg : 78XXX XXX96" />
-      </div>
-
-      <div class="inputs">
-        <label for="skill">Enter Your Skills</label>
-        <input
-          type="text"
-          id="skill"
-          placeholder="Eg : Python, HTML, CSS,...ets"
-        />
-      </div>
-
-      <div class="inputs">
-        <label for="mail">Enter Your E-mail ID</label>
-        <input
-          type="email"
-          id="mail"
-          placeholder="Eg : ramkumar001@gmail.com"
-        />
-      </div>
-
-      <div class="inputs">
-        <label for="linkedin">Enter Your LinkedIn Profile Link</label>
-        <input
-          type="text"
-          id="linkedin"
-          placeholder="Eg : https://www.linkedin.com/in/Ramkumar-python-developer/"
-        />
-      </div>
-
-      <div class="inputs">
-        <label for="degree">Enter Your Degree</label>
-        <input type="text" id="degree" placeholder="Eg : MCA" />
-      </div>
-
-      <div class="inputs">
-        <label for="major">Enter Your Major</label>
-        <input type="text" id="major" placeholder="Eg : Computer Application" />
-      </div>
-
-      <div class="inputs">
-        <label for="position">Enter The Job Position</label>
-        <input type="text" id="position" placeholder="Eg : Web Developer" />
-      </div>
-
-      <div class="inputs">
-        <label for="Companyname">Enter The Company Name</label>
-        <input type="text" id="Companyname" placeholder="Eg : Techno Soft" />
-      </div>
-
-      <div class="btns">
-        <input type="button" value="Submit" onclick="inputValue()" />
-        <input type="button" value="Clear" id="clear" />
-      </div>
-    </form>
-    <div id="display"></div> -->
-    <script src="./static/js/template.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./static/js/tem.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.6.0/validator.min.js"></script>
-  </body>
+</body>
 </html>
